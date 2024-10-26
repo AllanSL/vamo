@@ -56,7 +56,7 @@ function resposta(opcao) {
 
         const dittoWidth = 100; // Largura do Ditto
         const dittoHeight = 100; // Altura do Ditto
-
+        
         ditto.style.left = `${rect.left + (rect.width / 2) - (dittoWidth / 2)}px`;
         ditto.style.top = `${rect.top + (rect.height / 2) - (dittoHeight / 2)}px`;
         ditto.style.display = "block"; // Mostra o Ditto
