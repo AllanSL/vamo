@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convite</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Vamo sair final de semana?</h1>
+        <div class="buttons">
+            <button onclick="resposta('sim')">Sim</button>
+            <button onclick="resposta('nao')">Não</button>
+        </div>
+        <p id="mensagem"></p>
+    </div>
+
+    <!-- Elemento para a animação do coração -->
+    <div id="coracao-container">
+        <img src="images/coracao.png" id="coracao" alt="Coração">
+    </div>
+
+    <!-- Elemento para a animação do Ditto -->
+    <img src="images/ditto.png" id="ditto" alt="Ditto" style="display: none; position: absolute; z-index: 9;">
+
+    <!-- Elemento de áudio para tocar a música -->
+    <audio id="loveSound" src="sounds/love.mp3"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>

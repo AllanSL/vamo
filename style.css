@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .buttons {
+    margin-top: 20px;
+  }
+  
+  button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #ddd;
+  }
+  
+  button:nth-child(1) {
+    background-color: green;
+    color: white;
+  }
+  
+  button:nth-child(2) {
+    background-color: red;
+    color: white;
+  }
+  
+  #mensagem {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #555;
+  }
+
+#coracao-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none; /* Inicialmente oculto */
+  z-index: 10;
+}
+
+#coracao {
+  width: 50px; /* Tamanho inicial pequeno */
+  opacity: 0;
+  animation: crescer 5s ease forwards;
+}
+
+/* Animação para fazer o coração crescer */
+@keyframes crescer {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(10);
+    opacity: 1;
+  }
+}
+
+#ditto {
+    width: 100px; /* Ajuste conforme necessário */
+    display: none; /* Inicialmente oculto */
+}
+
+@keyframes aparecerDiminuir {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.2); /* Aumenta um pouco */
+        opacity: 1; /* Totalmente visível */
+    }
+    100% {
+        transform: scale(0); /* Retorna ao tamanho 0 */
+        opacity: 0; /* Torna invisível */
+    }
+}
+
+#ditto {
+    width: 100px; /* Ajuste conforme necessário */
+    height: 100px; /* Ajuste conforme necessário */
+    display: none; /* Inicialmente oculto */
+    position: absolute;
+    z-index: 20; /* Para garantir que fique sobre outros elementos */
+    animation: aparecerDiminuir 4s forwards; /* Animação de 2 segundos */
+}
+
+@keyframes transformarBotaoNao {
+    0% {
+        background-color: red; /* Cor inicial */
+    }
+    50% {
+        background-color: orange; /* Cor durante a animação */
+
+    }
+    100% {
+        background-color: green; /* Cor final */
+    }
+}
+
+.transformar {
+    animation: transformarBotaoNao 2s forwards; /* Dura 2 segundos */
+}
+
