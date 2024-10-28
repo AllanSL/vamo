@@ -42,7 +42,7 @@ function resposta(opcao) {
 
         // Aguarda o fim da animação e da música para abrir o link
         setTimeout(() => {
-            window.open("https://wa.me/5563991036533?text=Oi.%20Que%20horas%20vc%20me%20pega?", "_self");
+            window.open("https://wa.me/5563991036533?text=Oiie.%20Que%20horas%20vc%20me%20pega?", "_self");
             coracaoContainer.style.display = "none";
             //location.reload(); // Reinicia a página
         }, 5000); // 5 segundos para a animação
@@ -79,7 +79,7 @@ function resposta(opcao) {
                 coracaoContainer.style.display = "block";
 
                 setTimeout(() => {
-                    window.open("https://wa.me/5563991036533?text=Oi.%20Que%20horas%20vc%20me%20pega?", "_self");
+                    window.open("https://wa.me/5563991036533?text=Oiie.%20Que%20horas%20vc%20me%20pega?", "_self");
                     coracaoContainer.style.display = "none"; // Oculta o coração após a animação
                     //location.reload(); // Reinicia a página
                 }, 5000); // 5 segundos para a animação
