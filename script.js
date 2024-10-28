@@ -46,7 +46,7 @@ function resposta(opcao) {
             coracaoContainer.style.display = "none";
             //location.reload(); // Reinicia a página
         }, 5000); // 5 segundos para a animação
-
+        location.reload(); // Reinicia a página
         mensagem.textContent = ""; // Limpa a mensagem
 
     } else {
@@ -82,7 +82,9 @@ function resposta(opcao) {
                     window.open("https://wa.me/5563991036533?text=Oiie.%20Que%20horas%20vc%20me%20pega?", "_self");
                     coracaoContainer.style.display = "none"; // Oculta o coração após a animação
                     //location.reload(); // Reinicia a página
-                }, 5000); // 5 segundos para a animação
+                },
+                location.reload(), // Reinicia a página
+                 5000); // 5 segundos para a animação
             }, 0); // 1 segundo após o fim da animação do Ditto
         }, 3000); // 3 segundos para mostrar o Ditto
     }
